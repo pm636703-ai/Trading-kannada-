@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KANNADA EDUCATION</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1686634259129556');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1686634259129556&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    background:#050816;
+    color:#fff;
+}
+
+.container{
+    width:100%;
+    max-width:430px;
+    min-height:100vh;
+    padding:25px 18px 40px;
+    position:relative;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at top right, rgba(0,255,255,0.12), transparent 40%),
+        radial-gradient(circle at bottom left, rgba(138,43,226,0.18), transparent 45%),
+        linear-gradient(180deg, #050816, #0a1128, #050816);
+}
+
+.container::before,
+.container::after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    filter:blur(100px);
+    opacity:0.35;
+    animation:moveGlow 10s ease-in-out infinite alternate;
+}
+
+.container::before{
+    background:#00e5ff;
+    top:-80px;
+    right:-100px;
+}
+
+.container::after{
+    background:#8a2be2;
+    bottom:-80px;
+    left:-100px;
+    animation-delay:2s;
+}
+
+@keyframes moveGlow{
+    from{transform:translate(0,0) scale(1);}
+    to{transform:translate(30px,-20px) scale(1.15);}
+}
+
+.content{
+    position:relative;
+    z-index:2;
+    text-align:center;
+}
+
+.profile-card{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:28px;
+    padding:22px 20px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 20px 60px rgba(0,0,0,0.35);
+    margin-bottom:22px;
+}
+
+.avatar{
+    width:110px;
+    height:110px;
+    margin:0 auto 18px;
+    padding:4px;
+    border-radius:30px;
+    background:linear-gradient(135deg,#00e5ff,#8a2be2,#00ff99);
+}
+
+.avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:26px;
+}
+
+h1{
+    font-size:30px;
+    font-weight:800;
+    letter-spacing:1px;
+    margin-bottom:6px;
+}
+
+.tagline{
+    color:#00e5ff;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.description{
+    font-size:13px;
+    color:#b8c2d9;
+    line-height:1.6;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+    margin:20px 0;
+}
+
+.stat{
+    background:rgba(255,255,255,0.05);
+    border-radius:18px;
+    padding:14px 10px;
+    border:1px solid rgba(255,255,255,0.06);
+}
+
+.stat h3{
+    font-size:18px;
+    color:#00ff99;
+    margin-bottom:4px;
+}
+
+.stat p{
+    font-size:11px;
+    color:#b8c2d9;
+}
+
+.cta-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:18px;
+    width:-18px;
+    margin:20px auto;
+    border-radius:50px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:800;
+    font-size:20px;
+    background:linear-gradient(90deg,#00e5ff,#8a2be2,#00ff99);
+    background-size:300% 300%;
+    animation:gradientMove 5s linear infinite, pulse 2s infinite;
+    box-shadow:0 15px 40px rgba(0,229,255,0.25);
+}
+
+.cta-btn img{
+    width:22px;
+    height:22px;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    100%{background-position:100% 50%;}
+}
+
+@keyframes pulse{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.03);}
+}
+
+.benefits{
+    display:grid;
+    gap:12px;
+    margin-bottom:22px;
+}
+
+.benefit{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.07);
+    border-radius:20px;
+    padding:15px;
+    text-align:left;
+    transition:0.3s;
+}
+
+.benefit:hover{
+    transform:translateY(-3px);
+    border-color:#00e5ff;
+}
+
+.icon{
+    width:44px;
+    height:44px;
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    background:linear-gradient(135deg,#00e5ff,#8a2be2);
+}
+
+.benefit h4{
+    font-size:14px;
+    margin-bottom:3px;
+}
+
+.benefit p{
+    font-size:12px;
+    color:#b8c2d9;
+}
+
+.footer{
+    margin-top:18px;
+    font-size:13px;
+    color:#b8c2d9;
+}
+
+.footer span{
+    color:#00ff99;
+    font-weight:600;
+}
+
+.note{
+    margin-top:8px;
+    font-size:11px;
+    color:#8d99ae;
+}
+
+.float-btn{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    background:#229ED9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 0 30px rgba(34,158,217,0.6);
+    animation:bounce 2s infinite;
+    z-index:999;
+}
+
+.float-btn img{
+    width:30px;
+    height:30px;
+}
+
+@keyframes bounce{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-6px);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="content">
+
+        <div class="profile-card">
+            <div class="avatar">
+                <img src="kannada.jpg" alt="3point_traders">
+            </div>
+
+            <h1>TRADING KANNADA</h1>
+            <div class="tagline">Elite Trading Community 🚀</div>
+
+            <!-- Kannada Description -->
+            <div class="description">
+                ಮಾರುಕಟ್ಟೆ ವಿಶ್ಲೇಷಣೆ, ಪ್ರಾಯೋಗಿಕ ಕಲಿಕೆ ಮತ್ತು ಶಿಸ್ತುಬದ್ಧ ಟ್ರೇಡಿಂಗ್ ಅಭಿವೃದ್ಧಿಯನ್ನು ಕೇಂದ್ರವಾಗಿಟ್ಟುಕೊಂಡಿರುವ ಪ್ರೀಮಿಯಂ ಶಿಕ್ಷಣ ಸಮುದಾಯಕ್ಕೆ ಸೇರಿ.
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <h3>10K+</h3>
+                <p>Members</p>
+            </div>
+
+            <div class="stat">
+                <h3>24/7</h3>
+                <p>Support</p>
+            </div>
+
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Learning</p>
+            </div>
+        </div>
+
+        <a href="https://t.me/+oy1SOEBsSrE0OTM9" target="_blank" class="cta-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+            Join Telegram Now
+        </a>
+
+        <div class="benefits">
+
+            <div class="benefit">
+                <div class="icon">📊</div>
+                <div>
+                    <h4>Live Market Analysis</h4>
+                    <p>Daily insights and trend breakdowns.</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <div class="icon">🎓</div>
+                <div>
+                    <h4>Step-by-Step Training</h4>
+                    <p>Beginner to advanced trading education.</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <div class="icon">💎</div>
+                <div>
+                    <h4>Premium Setups</h4>
+                    <p>High-quality trade opportunities.</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <div class="icon">📈</div>
+                <div>
+                    <h4>Consistency Focus</h4>
+                    <p>Risk management and growth mindset.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            Powered by <span>ANNA Group</span>
+
+            <!-- Kannada Footer Note -->
+            <div class="note">
+                ಶೈಕ್ಷಣಿಕ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಮಾತ್ರ. ಟ್ರೇಡಿಂಗ್‌ನಲ್ಲಿ ಅಪಾಯಗಳಿವೆ.
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<a href="https://t.me/+oy1SOEBsSrE0OTM9" target="_blank" class="float-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+</a>
+
+</body>
+</html>
